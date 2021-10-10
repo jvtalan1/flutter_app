@@ -15,18 +15,21 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.pink,
       ),
-      body: const Center(
-          child: Text(
-              'Hello text',
-              style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Cabin'
-              )
+      body: Center(
+          child: IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.mail
+            ),
+            color: Colors.amber,
           )
       ),
       floatingActionButton: FloatingActionButton(
-        child: Text('click'),
+        child: const Icon(
+          Icons.add,
+          color: Colors.white,
+          size: 20.0
+        ),
         onPressed: () {},
         backgroundColor: Colors.pink,
       ),
